@@ -1,4 +1,3 @@
-# 2. สร้างไฟล์หน้าที่สอง --> app1_discount_calc.py
 %%writefile app1_discount_calc.py
 import streamlit as st
 
