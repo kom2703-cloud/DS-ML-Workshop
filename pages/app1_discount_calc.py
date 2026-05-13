@@ -1,4 +1,3 @@
-%%writefile app1_discount_calc.py
 import streamlit as st
 
 # 1. ส่วนหัวของโปรแกรม (UI)
