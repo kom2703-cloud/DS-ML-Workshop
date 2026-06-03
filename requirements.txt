@@ -1,6 +1,6 @@
 streamlit
-
-
+plotly
+joblib
 scikit-learn
 
 
