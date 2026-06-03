@@ -12,3 +12,5 @@ if st.button("💰 ระบบคำนวณส่วนลดตามยอ�
     st.switch_page("pages/app1_discount_calc.py")
 elif st.button("💰💰การแปลงข้อมูล"):
     st.switch_page("pages/transform_app.py")
+elif st.button("💰💰การวิเคราะห์ข้อมูลเชิงสำรวจ"):
+    st.switch_page("pages/EDA_app.py")
