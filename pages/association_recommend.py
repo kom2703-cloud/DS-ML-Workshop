@@ -5,7 +5,7 @@ import pandas as pd # Import library Pandas สำหรับจัดการ
 # ตรวจสอบให้แน่ใจว่า 'Model_association_rules.csv' อยู่ในไดเรกทอรีเดียวกันกับแอป Streamlit นี้
 @st.cache_data # Decorator สำหรับ Cache ข้อมูล เพื่อให้ Streamlit โหลดข้อมูลเพียงครั้งเดียวเมื่อแอปเริ่มทำงาน
 def load_rules():
-    rules = pd.read_csv('model/Model_association_rules.csv') # โหลดไฟล์ CSV ที่บันทึกกฎความสัมพันธ์
+    rules = pd.read_csv('model/Model_association_Rules.csv') # โหลดไฟล์ CSV ที่บันทึกกฎความสัมพันธ์
     # แปลงคอลัมน์ 'antecedents' และ 'consequents' ที่เป็น string กลับไปเป็น frozenset
     # เพื่อให้สามารถเปรียบเทียบและใช้งานได้ง่ายขึ้นในฟังก์ชันแนะนำ
     rules['antecedents'] = rules['antecedents'].apply(lambda x: frozenset(item.strip() for item in x.split(', ')))
